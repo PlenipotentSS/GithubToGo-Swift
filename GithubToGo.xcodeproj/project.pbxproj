@@ -16,6 +16,8 @@
 		D28E9A6E1942642700C40D70 /* GithubToGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28E9A6D1942642700C40D70 /* GithubToGoTests.swift */; };
 		D28E9A7819426A4F00C40D70 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28E9A7719426A4F00C40D70 /* ConnectionManager.swift */; };
 		D28E9A7E194280AE00C40D70 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28E9A7D194280AE00C40D70 /* RepoTableViewCell.swift */; };
+		D28E9A80194283CE00C40D70 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28E9A7F194283CE00C40D70 /* Repo.swift */; };
+		D28E9A831942844400C40D70 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28E9A821942844400C40D70 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		D28E9A6D1942642700C40D70 /* GithubToGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubToGoTests.swift; sourceTree = "<group>"; };
 		D28E9A7719426A4F00C40D70 /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 		D28E9A7D194280AE00C40D70 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
+		D28E9A7F194283CE00C40D70 /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		D28E9A821942844400C40D70 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +89,8 @@
 			children = (
 				D28E9A551942642600C40D70 /* AppDelegate.swift */,
 				D28E9A7D194280AE00C40D70 /* RepoTableViewCell.swift */,
-				D28E9A7A19427FAA00C40D70 /* Managers */,
 				D28E9A7919427FA500C40D70 /* Controllers */,
+				D28E9A81194283D100C40D70 /* Models */,
 				D28E9A5E1942642600C40D70 /* Main.storyboard */,
 				D28E9A611942642600C40D70 /* Images.xcassets */,
 				D28E9A571942642600C40D70 /* GithubToGo.xcdatamodeld */,
@@ -129,12 +133,14 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		D28E9A7A19427FAA00C40D70 /* Managers */ = {
+		D28E9A81194283D100C40D70 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				D28E9A7719426A4F00C40D70 /* ConnectionManager.swift */,
+				D28E9A7F194283CE00C40D70 /* Repo.swift */,
+				D28E9A821942844400C40D70 /* User.swift */,
 			);
-			name = Managers;
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,9 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D28E9A80194283CE00C40D70 /* Repo.swift in Sources */,
 				D28E9A7819426A4F00C40D70 /* ConnectionManager.swift in Sources */,
 				D28E9A561942642600C40D70 /* AppDelegate.swift in Sources */,
 				D28E9A591942642600C40D70 /* GithubToGo.xcdatamodeld in Sources */,
+				D28E9A831942844400C40D70 /* User.swift in Sources */,
 				D28E9A5B1942642600C40D70 /* MasterViewController.swift in Sources */,
 				D28E9A5D1942642600C40D70 /* DetailViewController.swift in Sources */,
 				D28E9A7E194280AE00C40D70 /* RepoTableViewCell.swift in Sources */,

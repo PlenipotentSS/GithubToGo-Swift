@@ -11,6 +11,5 @@ import UIKit
 class RepoTableViewCell: UITableViewCell {
     @IBOutlet var userPicture: UIImageView
     @IBOutlet var repoTitle: UILabel
-    
-    
+
 }

@@ -36,6 +36,10 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             self.detailViewController = controllers[controllers.endIndex-1].topViewController as? DetailViewController
         }
         
+        
+        let aView = UIView()
+        aView.addSubview(UIView())
+        
         searchBar.delegate = self;
     }
 
@@ -120,7 +124,9 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
         let object = self.fetchedResultsController.objectAtIndexPath(indexPath) as NSManagedObject
-        cell.textLabel.text = object.valueForKey("title").description
+        let user : AnyObject! = object.valueForKey("user")
+        let repoCell = cell as RepoTableViewCell
+        repoCell.repoTitle.text = object.valueForKey("title").description
     }
 
     // #pragma mark - Fetched results controller
